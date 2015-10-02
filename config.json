@@ -1,0 +1,30 @@
+{
+  "development": {
+    "environment": "development",
+    "url": "http://127.0.0.1:3000",   
+    "database": {
+      "url": "mongodb://localhost/links"
+    },
+    "viewCache": false,
+    "secret" : "ilovelinks2015-dev",
+    "port": 8080,
+    "statsd":{
+      "host":"localhost",
+      "port":8125
+    }
+  },
+  "production": {
+    "environment": "production",
+     "url": "http://127.0.0.1:3000",   
+    "database": {
+      "url": "mongodb://localhost/links"
+    },
+    "viewCache": true,
+    "secret" : "ilovelinks2015-dev",
+    "port": 8080,
+    "statsd":{
+      "host":"localhost",
+      "port":8125
+    }
+  }
+}
